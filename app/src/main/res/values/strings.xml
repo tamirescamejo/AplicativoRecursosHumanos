@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Recursos Humanos</string>
+    <string name="text_cadastroInformacoes">Cadastro de Informações</string>
+    <string name="text_inicialView">Esse é o nosso aplicatido de cadastro de funcionaries, aqui vamos cadastrar as informações e calcular o salário do funcionarie.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_nomeSobrenome">Nome e Sobrenome</string>
+</resources>

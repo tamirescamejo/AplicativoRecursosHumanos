@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cadastroFuncionarie">
+
+    <fragment
+        android:id="@+id/cadastroFuncionarie"
+        android:name="br.com.zup.recursoshumanos.CadastroFuncionarie"
+        android:label="fragment_cadastro_funcionarie"
+        tools:layout="@layout/fragment_cadastro_funcionarie" >
+        <action
+            android:id="@+id/action_cadastroFuncionarie_to_salarioFuncionarie"
+            app:destination="@id/salarioFuncionarie" />
+    </fragment>
+    <fragment
+        android:id="@+id/salarioFuncionarie"
+        android:name="br.com.zup.recursoshumanos.SalarioFuncionarie"
+        android:label="fragment_salario_funcionarie"
+        tools:layout="@layout/fragment_salario_funcionarie" />
+</navigation>
