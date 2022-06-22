@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/cadastroFuncionarie"
-        android:name="br.com.zup.recursoshumanos.CadastroFuncionarie"
+        android:name="br.com.zup.recursoshumanos.CadastroFuncionarieFragment"
         android:label="fragment_cadastro_funcionarie"
         tools:layout="@layout/fragment_cadastro_funcionarie" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/salarioFuncionarie"
-        android:name="br.com.zup.recursoshumanos.SalarioFuncionarie"
+        android:name="br.com.zup.recursoshumanos.SalarioFuncionarieFragment"
         android:label="fragment_salario_funcionarie"
         tools:layout="@layout/fragment_salario_funcionarie" />
 </navigation>

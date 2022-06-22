@@ -10,7 +10,7 @@ import androidx.navigation.fragment.NavHostFragment
 import br.com.zup.recursoshumanos.databinding.FragmentCadastroFuncionarieBinding
 import br.com.zup.recursoshumanos.model.Funcionarie
 
-class CadastroFuncionarie : Fragment() {
+class CadastroFuncionarieFragment : Fragment() {
     private lateinit var binding: FragmentCadastroFuncionarieBinding
     private lateinit var nomeSobrenome: String
     private lateinit var horasTrabalhadas: String

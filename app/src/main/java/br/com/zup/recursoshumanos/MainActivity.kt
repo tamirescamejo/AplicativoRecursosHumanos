@@ -14,6 +14,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportFragmentManager.beginTransaction().add(binding.navHostFragment.id, CadastroFuncionarie()).commit()
+        supportFragmentManager.findFragmentById(binding.navHostFragment.id) as NavHostFragment
     }
 }

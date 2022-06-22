@@ -4,16 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".CadastroFuncionarie"
+    tools:context=".CadastroFuncionarieFragment"
     android:layout_margin="@dimen/margin_16"
     android:background="@color/cinzaClaro">
 
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_margin="@dimen/margin_16"
         android:text="@string/text_cadastroInformacoes"
         android:textSize="@dimen/font_16"
         android:textStyle="bold"
@@ -26,11 +26,12 @@
         android:id="@+id/etNomeSobrenome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_margin="@dimen/margin_16"
         android:hint="@string/text_nomeSobrenome"
         android:textSize="@dimen/font_12"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -38,10 +39,12 @@
         android:id="@+id/etHorasTrabalhadas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="Horas Trabalhadas"
+        android:layout_margin="@dimen/margin_16"
+        android:hint="@string/text_horasTrabalhadas"
         android:textSize="@dimen/font_12"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNomeSobrenome" />
 
@@ -49,10 +52,12 @@
         android:id="@+id/etValorHora"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Valor por hora"
+        android:layout_margin="@dimen/margin_16"
+        android:hint="@string/text_valorPorHora"
         android:textSize="@dimen/font_12"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etHorasTrabalhadas" />
 
@@ -61,8 +66,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/amarelo"
-        android:text="calcular Salário"
+        android:text="@string/text_calcularSalario"
         android:textAllCaps="true"
+        android:layout_margin="@dimen/margin_16"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

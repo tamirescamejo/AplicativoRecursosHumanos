@@ -5,4 +5,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_nomeSobrenome">Nome e Sobrenome</string>
+    <string name="text_salarioReceber">Salário a Receber</string>
+    <string name="text_valorPorHora">Valor por Hora</string>
+    <string name="text_horasTrabalhadas">Horas Trabalhadas</string>
+    <string name="text_descriptionImage">Imagem de um avatar na cor cinza</string>
+    <string name="text_nomeFuncionario">Nome Funcionario</string>
+    <string name="text_calcularSalario">calcular Salário</string>
 </resources>

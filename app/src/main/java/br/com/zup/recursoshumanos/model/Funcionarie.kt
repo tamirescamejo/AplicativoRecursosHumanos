@@ -12,4 +12,7 @@ class Funcionarie(
     fun getNomeSobrenome() = this.nomeSobrenome
     fun getHorasTrabalhadas() = this.horasTrabalhadas
     fun getValorPorHora() = this.valorPorHora
+    fun getValorTotalSalario() = this.valorTotalSalário
+
+    private var valorTotalSalário = horasTrabalhadas*valorPorHora
 }

@@ -8,28 +8,26 @@ import android.view.ViewGroup
 import br.com.zup.recursoshumanos.databinding.FragmentSalarioFuncionarieBinding
 import br.com.zup.recursoshumanos.model.Funcionarie
 
-class SalarioFuncionarie : Fragment() {
+class SalarioFuncionarieFragment : Fragment() {
     private lateinit var binding: FragmentSalarioFuncionarieBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-       binding = FragmentSalarioFuncionarieBinding.inflate(inflater, container, false)
+        binding = FragmentSalarioFuncionarieBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        recuperarDadosFuncionarie()
-    }
 
-    private fun recuperarDadosFuncionarie(){
         val funcionarie = arguments?.getParcelable<Funcionarie>(CHAVE_FUNCIONARIE)
-        if(funcionarie != null){
+        if (funcionarie != null) {
             binding.tvNomeFuncionarie.text = funcionarie.getNomeSobrenome()
-            binding.tvHorasTrabalhadasEditada.text = funcionarie.getHorasTrabalhadas().toString()
-            binding.tvValorHoraEditada.text = funcionarie.getValorPorHora().toString()
+            binding.tvHorasTrabalhadas.text = "Horas Trabalhadas: ${funcionarie.getHorasTrabalhadas()}"
+            binding.tvValorHora.text = "Valor Por Hora: R$ ${funcionarie.getValorPorHora()}"
+            binding.tvSalarioReceberTotal.text = "Salário a Receber: R$ ${funcionarie.getValorTotalSalario()}"
         }
     }
 }

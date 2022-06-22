@@ -4,112 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SalarioFuncionarie"
+    tools:context=".SalarioFuncionarieFragment"
     android:layout_margin="@dimen/margin_16">
 
     <TextView
         android:id="@+id/tvSalarioReceber"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Salário a Receber"
+        android:layout_margin="@dimen/margin_16"
+        android:text="@string/text_salarioReceber"
         android:textSize="@dimen/font_16"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvValorHora"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="28dp"
-        android:text="Valor por Hora"
+        android:layout_margin="@dimen/margin_16"
+        android:text="@string/text_valorPorHora"
         android:textSize="@dimen/font_12"
-        app:layout_constraintEnd_toStartOf="@+id/tvValorHoraEditada"
-        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.781"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvHorasTrabalhadas" />
 
     <TextView
         android:id="@+id/tvHorasTrabalhadas"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="32dp"
-        android:text="Horas Trabalhadas"
+        android:layout_margin="@dimen/margin_16"
+        android:text="@string/text_horasTrabalhadas"
         android:textSize="@dimen/font_12"
-        app:layout_constraintEnd_toStartOf="@+id/tvHorasTrabalhadasEditada"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/tvSalarioReceberText"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvSalarioReceberTotal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
-        android:text="Salário a Receber"
+        android:layout_margin="@dimen/margin_16"
+        android:text="@string/text_salarioReceber"
         android:textSize="@dimen/font_12"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tvSalarioReceberTextEditadas"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvValorHora"
-        app:layout_constraintVertical_bias="0.09" />
-
-    <TextView
-        android:id="@+id/tvValorHoraEditada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginRight="164dp"
-        android:text="TextView"
-        android:textSize="@dimen/font_12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHorasTrabalhadasEditada" />
-
-    <TextView
-        android:id="@+id/tvHorasTrabalhadasEditada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
-        android:text="TextView"
-        android:textSize="@dimen/font_12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNomeFuncionarie" />
-
-    <TextView
-        android:id="@+id/tvSalarioReceberTextEditadas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginRight="160dp"
-        android:text="TextView"
-        android:textSize="@dimen/font_12"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvValorHoraEditada"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/tvValorHora" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="@dimen/width_45"
         android:layout_height="@dimen/heigth_45"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="8dp"
+        android:layout_margin="@dimen/margin_16"
+        android:contentDescription="@string/text_descriptionImage"
         android:src="@drawable/avatar"
-        app:layout_constraintEnd_toStartOf="@+id/tvNomeFuncionarie"
-        app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSalarioReceber" />
 
@@ -117,12 +69,12 @@
         android:id="@+id/tvNomeFuncionarie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="196dp"
-        android:layout_marginRight="196dp"
-        android:text="Nome Funcionario"
+        android:layout_marginTop="@dimen/margin_68"
+        android:text="@string/text_nomeFuncionario"
         android:textSize="@dimen/font_12"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
